@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Init Vue App</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+    <div id="appdiv">
+        <h1>Guitars</h1>
+        <div class="guitars">
+            <!-- <div v-for="guitar in guitars" :key="guitar.id">
+                <h2 v-if="guitar.stock > 0">{{ guitar.name }}</h2>
+            </div> -->
+            <template v-for="guitar in guitars" :key="guitar.id">
+                <h2 v-if="guitar.stock > 0">{{ guitar.name }}</h2>
+            </template>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

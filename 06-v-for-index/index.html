@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-for direktiva</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="appdiv">  
+        <ul>
+            <li v-for="(framework, index) in frameworks" :key=`framework-${index}`>
+                {{index + 1}}. {{ framework.name }}
+            </li>
+        </ul>
+    </div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
