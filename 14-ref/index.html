@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ref attribútum</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="appdiv">  
+        <h1>Counter</h1>
+        <!-- <button v-on:click="decreaseCounter">-</button> -->
+        <button @click="decreaseCounter">-</button>
+        <p>{{ counter }}</p>
+        <button v-on:click="increaseCounter">+</button>
+    </div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
