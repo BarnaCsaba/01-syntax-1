@@ -6,12 +6,12 @@ const app = Vue.createApp({
         //     name.value = 'Szabolcs'
         // }, 2000)
 
-        function updateName(event) {
-            name.value = event.target.value
-        }
+        // function updateName(event) {
+        //     name.value = event.target.value
+        // }
 
         return { name,
-            updateName
+            // updateName
          }
     }
 })
