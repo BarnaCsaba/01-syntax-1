@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computed Price</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="appdiv">  
+        <h1>Price</h1>
+
+        <button @click="decreasePrice">-</button>
+        <p>{{ price.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}</p>
+        <button v-on:click="increasePrice">+</button>
+    </div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
