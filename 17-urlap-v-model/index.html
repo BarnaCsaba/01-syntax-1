@@ -11,7 +11,7 @@
         <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" :value="name" v-model="name"
-        @input="event => name = event.target.value">
+        @input="updateName($event)">
         <p>{{ name }}</p>
         </div>
     </div>
