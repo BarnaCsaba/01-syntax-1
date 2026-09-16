@@ -8,12 +8,12 @@
 </head>
 <body>
     <div id="appdiv">  
-        <h1>Price: {{ price }}</h1>
-        <button @click="increasePrice">Increase</button>
-        <p>{{ price.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}</p>
-        <button @click="decreasePrice">Decrease</button>
-        <p v-if="errorMessage" style="color: red;">{{ errorMessage }}</p>
-        <p>My money: {{ myMoney.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}</p>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" v-model="name">
+            @input="updateName"($event)
+            <p>Name: {{ name }}</p>
+        </div>
     </div>
     
     <script src="main.js"></script>
