@@ -11,7 +11,9 @@
         <h1>Price</h1>
 
         <button @click="decreasePrice">-</button>
-        <p>{{ price.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}</p>
+        <!-- <p>{{ price.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}</p> -->
+        <!-- <p>{{ formatPrice() }}</p> -->
+        <p>{{ formattedPrice }}</p>
         <button v-on:click="increasePrice">+</button>
     </div>
     

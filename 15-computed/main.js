@@ -1,4 +1,4 @@
-const {createApp, ref} = Vue
+const {createApp, ref, computed} = Vue
 
 // const app = Vue.createApp({
 const app = createApp({
@@ -17,16 +17,21 @@ const app = createApp({
             console.log(price.value)
         }
 
-        function formatPrice() {
+        // function formatPrice() {
+        //     return price.value.toLocaleString('en-US', { 
+        //         style: 'currency',
+        //         currency: 'EUR' })
+        // }
+
+        const formattedPrice = computed(() => {
             return price.value.toLocaleString('en-US', { 
                 style: 'currency',
                 currency: 'EUR' })
-        }
-
+        })
 
         return { 
             price, 
-            formatPrice,
+            formattedPrice,
             increasePrice, 
             decreasePrice}
     }
