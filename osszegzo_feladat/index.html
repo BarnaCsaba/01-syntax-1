@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelBolt — összefoglaló feladat</title>
+</head>
+<script src="https://unpkg.com/vue@3"></script>
+<body>
+    <div id="app">
+        <h1>{{shopName}}</h1>
+        <h2>{{slogan}}</h2>
+        <h1 v-html="welcomeHtml"></h1>
+        <h1 :title="tooltip"></h1>
+        <img v-bind="logo" />
+        <div id="kiemeltek">
+            <ul>
+                <li v-for="(termek, index) in kiemeltek" :key=`termek.id`>
+                    {{index + 1}}. {{ termek.name }}
+                </li>
+            </ul>
+        </div>
+
+        <div id="polcok">  
+            <ul>
+                <li v-for="polc in polcok" :key="polc.id">
+                    <ul>
+                        <li v-for="termek in polc">{{ termek }}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <section id="Most kapható" >
+            <template v-for="termek in termekek" :key="termek.id">
+                <h3 v-if="termek.keszlet > 0">{{ termek.name }}</h3>
+               
+            </template>
+        </section>
+        <!-- A feladat leírása a FELADAT.md-ben van.
+             Ide dolgozz: interpoláció, v-html, v-bind, v-for, v-if, v-show, :style -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

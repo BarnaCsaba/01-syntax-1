@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="appdiv">  
+<<<<<<< HEAD
         <h1>Price</h1>
 
         <button @click="decreasePrice">-</button>
@@ -15,6 +16,12 @@
         <!-- <p>{{ formatPrice() }}</p> -->
         <p>{{ formattedPrice }}</p>
         <button v-on:click="increasePrice">+</button>
+=======
+        <h1>Price: {{ price }}</h1>
+        <button @click="increasePrice">Increase</button>
+        <p>{{ price.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}</p>
+        <button @click="decreasePrice">Decrease</button>
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
     </div>
     
     <script src="main.js"></script>

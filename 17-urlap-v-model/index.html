@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Init Vue App</title>
+=======
+    <title>Computed Price</title>
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
     <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
     <div id="appdiv">  
         <div class="form-group">
+<<<<<<< HEAD
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" v-model="name">
         <p>{{ name }}</p>
+=======
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" v-model="name">
+            @input="updateName"($event)
+            <p>Name: {{ name }}</p>
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
         </div>
     </div>
     

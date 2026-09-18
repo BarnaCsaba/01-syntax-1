@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Ref attribútum</title>
+=======
+    <title>Refattribútum</title>
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
     <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
     <div id="appdiv">  
+<<<<<<< HEAD
         <h1>Counter</h1>
         <!-- <button v-on:click="decreaseCounter">-</button> -->
         <button @click="decreaseCounter">-</button>
         <p>{{ counter }}</p>
         <button v-on:click="increaseCounter">+</button>
+=======
+        <h1>Counter: {{ counter }}</h1>
+        <button @click="increaseCounter">Increase</button>
+        {{ counter  }}
+        <button @click="decreaseCounter">Decrease</button>
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
     </div>
     
     <script src="main.js"></script>

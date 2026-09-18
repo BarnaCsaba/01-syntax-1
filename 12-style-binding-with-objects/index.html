@@ -14,6 +14,7 @@
         <div class="guitars">
             <div v-for="guitar in guitars" :key="guitar.id">
                 <h2>{{ guitar.name }}</h2>
+<<<<<<< HEAD
                 <span v-if="guitar.stock === 0" 
                 :style="outOfStock">Out of stock</span>
 
@@ -21,6 +22,12 @@
                 :style="OnlyFewLeft">Last chance, only {{ guitar.stock }} left.</span>
 
                 <span v-else :style="inStock">In stock</span>
+=======
+                <span v-if="guitar.stock === 0" :style="outofstock ">Out of stock</span>
+                <span v-else-if="guitar.stock < 3" :style="onlyfewleft">Last chance, only {{ guitar.stock }} left.</span>
+                <span v-else :style="instock">In stock</span>
+
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
             </div>
         </div>
     </div>

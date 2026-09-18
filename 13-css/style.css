@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .out-of-stock {
     color: red;
     font-size: 1.25rem;
@@ -10,4 +11,20 @@
 .only-few-left {
     color: orange;
     font-size: 1.5rem;
+=======
+
+.out-of-stock{
+    color: red;
+    font-size: 1.25rem;
+}
+
+.only-few-left{
+    color: orange;
+    font-size: 1.5rem;
+}
+
+.instock{
+    color: lightgreen;
+    font-size: 1rem;
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
 }

@@ -8,17 +8,30 @@
 </head>
 <body>
     <div id="appdiv">  
+<<<<<<< HEAD
         <h1>Price</h1>
 
         <button @click="decreasePrice">-</button>
         <p>{{ formattedPrice }}</p>
         <button v-on:click="increasePrice">+</button>
         <p v-if="errorMessage">{{ errorMessage }}</p>
+=======
+        <h1>Price: {{ price }}</h1>
+        <button @click="increasePrice">Increase</button>
+        <p>{{ price.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}</p>
+        <button @click="decreasePrice">Decrease</button>
+        <p v-if="errorMessage" style="color: red;">{{ errorMessage }}</p>
+        <p>My money: {{ myMoney.toLocaleString('en-US', { style: 'currency', currency: 'EUR' }) }}</p>
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
     </div>
     
     <script src="main.js"></script>
 
 </body>
+<<<<<<< HEAD
 </html>
 
 <!-- figyeljük egy adott változó értékének változását -->
+=======
+</html>
+>>>>>>> 7843167e6920dc9e8acaba2be52557cbb36fdf81
